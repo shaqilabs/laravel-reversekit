@@ -102,4 +102,3 @@ class UserTest extends TestCase
         $this->assertDatabaseMissing('users', ['id' => $targetUser->id]);
     }
 }
-

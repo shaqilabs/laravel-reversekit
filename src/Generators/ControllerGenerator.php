@@ -175,4 +175,3 @@ PHP;
         return implode('|', $rules);
     }
 }
-

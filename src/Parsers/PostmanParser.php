@@ -17,7 +17,8 @@ class PostmanParser implements ParserInterface
     public function __construct(
         private TypeInferrer $typeInferrer,
         private RelationshipDetector $relationshipDetector
-    ) {}
+    ) {
+    }
 
     /**
      * Parse Postman collection file.

@@ -75,7 +75,7 @@ class RouteGenerator extends BaseGenerator
      */
     private function generateRouteBlock(array $entities, array $routes): string
     {
-        $modelNames = implode(', ', array_map(fn($e) => $e['name'], $entities));
+        $modelNames = implode(', ', array_map(fn ($e) => $e['name'], $entities));
         $timestamp = date('Y-m-d H:i:s');
 
         $block = "\n\n// ReverseKit Generated Routes ({$timestamp})";
@@ -129,4 +129,3 @@ PHP;
         file_put_contents($path, $content);
     }
 }
-

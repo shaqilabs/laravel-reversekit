@@ -14,7 +14,8 @@ class ApiUrlParser implements ParserInterface
 
     public function __construct(
         private JsonParser $jsonParser
-    ) {}
+    ) {
+    }
 
     /**
      * Parse JSON from a URL.
@@ -112,4 +113,3 @@ class ApiUrlParser implements ParserInterface
         return $this->entities;
     }
 }
-

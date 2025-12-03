@@ -182,4 +182,3 @@ PHP;
         self::$migrationOrder = 0;
     }
 }
-

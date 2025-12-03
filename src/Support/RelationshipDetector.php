@@ -8,7 +8,8 @@ class RelationshipDetector
 {
     public function __construct(
         private TypeInferrer $typeInferrer
-    ) {}
+    ) {
+    }
 
     /**
      * Detect relationships from JSON structure.
@@ -180,4 +181,3 @@ class RelationshipDetector
         return lcfirst($this->toPascalCase($string));
     }
 }
-

@@ -104,4 +104,3 @@ PHP;
         return "[\n{$fieldsString}\n        ]";
     }
 }
-

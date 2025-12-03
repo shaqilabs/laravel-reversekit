@@ -20,4 +20,3 @@ interface ParserInterface
      */
     public function getEntities(): array;
 }
-

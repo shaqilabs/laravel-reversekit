@@ -433,11 +433,10 @@ class ReverseGenerateCommand extends Command
         $this->newLine();
         $this->info('📊 Generation Summary:');
 
-        $created = count(array_filter($this->generatedFiles, fn($f) => $f['created']));
-        $skipped = count(array_filter($this->generatedFiles, fn($f) => $f['existed'] && !$f['created']));
+        $created = count(array_filter($this->generatedFiles, fn ($f) => $f['created']));
+        $skipped = count(array_filter($this->generatedFiles, fn ($f) => $f['existed'] && !$f['created']));
 
         $this->line("   ✓ Created: {$created} files");
         $this->line("   ○ Skipped: {$skipped} files (already existed)");
     }
 }
-

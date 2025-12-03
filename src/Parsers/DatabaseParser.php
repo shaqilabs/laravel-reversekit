@@ -15,7 +15,8 @@ class DatabaseParser implements ParserInterface
 
     public function __construct(
         private RelationshipDetector $relationshipDetector
-    ) {}
+    ) {
+    }
 
     /**
      * Parse database tables.
@@ -60,7 +61,7 @@ class DatabaseParser implements ParserInterface
 
         if ($input === '*') {
             $allTables = Schema::getTableListing();
-            return array_filter($allTables, fn($table) => !in_array($table, $excludedTables));
+            return array_filter($allTables, fn ($table) => !in_array($table, $excludedTables));
         }
 
         $requestedTables = array_map('trim', explode(',', $input));

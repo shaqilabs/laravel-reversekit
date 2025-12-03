@@ -57,7 +57,7 @@ class ModelGenerator extends BaseGenerator
         }
 
         sort($uses);
-        $useStatements = implode("\n", array_map(fn($use) => "use {$use};", $uses));
+        $useStatements = implode("\n", array_map(fn ($use) => "use {$use};", $uses));
 
         $content = <<<PHP
 <?php
@@ -89,14 +89,14 @@ PHP;
     {
         $fillableFields = array_filter(
             array_keys($fields),
-            fn($name) => $name !== 'id' && !in_array($name, ['created_at', 'updated_at'])
+            fn ($name) => $name !== 'id' && !in_array($name, ['created_at', 'updated_at'])
         );
 
         if (empty($fillableFields)) {
             return "    protected \$fillable = [];";
         }
 
-        $items = array_map(fn($field) => "        '{$field}',", $fillableFields);
+        $items = array_map(fn ($field) => "        '{$field}',", $fillableFields);
         $itemsString = implode("\n", $items);
 
         return <<<PHP
@@ -190,4 +190,3 @@ PHP;
 PHP;
     }
 }
-

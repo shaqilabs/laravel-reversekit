@@ -18,7 +18,8 @@ class OpenApiParser implements ParserInterface
     public function __construct(
         private TypeInferrer $typeInferrer,
         private RelationshipDetector $relationshipDetector
-    ) {}
+    ) {
+    }
 
     /**
      * Parse OpenAPI/Swagger specification file.

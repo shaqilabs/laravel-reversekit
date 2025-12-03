@@ -120,4 +120,3 @@ PHP;
         return "\$user->id === \${$modelVar}->user_id";
     }
 }
-

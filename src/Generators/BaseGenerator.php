@@ -136,7 +136,7 @@ abstract class BaseGenerator
     {
         $indent = str_repeat('    ', $levels);
         $lines = explode("\n", $code);
-        return implode("\n", array_map(fn($line) => $line ? $indent . $line : $line, $lines));
+        return implode("\n", array_map(fn ($line) => $line ? $indent . $line : $line, $lines));
     }
 
     /**
@@ -171,4 +171,3 @@ abstract class BaseGenerator
         return $this->getBasePath() . '/' . $className . '.php';
     }
 }
-

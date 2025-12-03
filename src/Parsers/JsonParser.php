@@ -20,7 +20,8 @@ class JsonParser
     public function __construct(
         private TypeInferrer $typeInferrer,
         private RelationshipDetector $relationshipDetector
-    ) {}
+    ) {
+    }
 
     /**
      * Parse JSON content and extract entities.
@@ -219,4 +220,3 @@ class JsonParser
         return $this->entities;
     }
 }
-

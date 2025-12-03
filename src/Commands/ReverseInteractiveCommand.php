@@ -155,7 +155,7 @@ class ReverseInteractiveCommand extends Command
                 label: 'Enter model name (e.g., User, BlogPost)',
                 placeholder: 'User',
                 required: true,
-                validate: fn(string $value) => preg_match('/^[A-Z][a-zA-Z0-9]*$/', $value)
+                validate: fn (string $value) => preg_match('/^[A-Z][a-zA-Z0-9]*$/', $value)
                     ? null
                     : 'Model name must be PascalCase (e.g., User, BlogPost)'
             );
@@ -213,7 +213,7 @@ class ReverseInteractiveCommand extends Command
                 label: 'Field name (snake_case)',
                 placeholder: 'title',
                 required: true,
-                validate: fn(string $value) => preg_match('/^[a-z][a-z0-9_]*$/', $value)
+                validate: fn (string $value) => preg_match('/^[a-z][a-z0-9_]*$/', $value)
                     ? null
                     : 'Field name must be snake_case (e.g., title, created_at)'
             );

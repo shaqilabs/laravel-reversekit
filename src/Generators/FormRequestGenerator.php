@@ -150,4 +150,3 @@ class FormRequestGenerator extends BaseGenerator
         return $this->getBasePath() . '/Http/Requests/' . $className . '.php';
     }
 }
-

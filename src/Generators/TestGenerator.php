@@ -204,7 +204,7 @@ PHP;
     {
         $fieldNames = array_filter(
             array_keys($fields),
-            fn($name) => !in_array($name, ['created_at', 'updated_at'])
+            fn ($name) => !in_array($name, ['created_at', 'updated_at'])
         );
 
         return "'" . implode("', '", $fieldNames) . "'";
@@ -241,4 +241,3 @@ PHP;
         };
     }
 }
-

@@ -141,4 +141,3 @@ class DatabaseSeeder extends Seeder
 PHP;
     }
 }
-
