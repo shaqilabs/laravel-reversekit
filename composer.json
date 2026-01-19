@@ -1,5 +1,5 @@
 {
-    "name": "shaqi-labs/laravel-reversekit",
+    "name": "shaqilabs/laravel-reversekit",
     "description": "Generate complete Laravel backend scaffolding from JSON structures",
     "type": "library",
     "license": "MIT",
