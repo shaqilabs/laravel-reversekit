@@ -5,7 +5,7 @@
 ## 📦 Installation
 
 ```bash
-composer require shaqilabs/laravel-reversekit
+composer require shaqi-labs/laravel-reversekit
 ```
 
 No additional configuration needed - Laravel auto-discovers the package.
@@ -326,8 +326,8 @@ A: Yes! Use `--module=Blog` or `--namespace=Domain\\Blog`.
 
 ## 🔗 Links
 
-- **GitHub:** [github.com/shaqilabs/laravel-reversekit](https://github.com/shaqilabs/laravel-reversekit)
-- **Packagist:** [packagist.org/packages/shaqilabs/laravel-reversekit](https://packagist.org/packages/shaqilabs/laravel-reversekit)
+- **GitHub:** [github.com/shaqi-labs/laravel-reversekit](https://github.com/shaqi-labs/laravel-reversekit)
+- **Packagist:** [packagist.org/packages/shaqi-labs/laravel-reversekit](https://packagist.org/packages/shaqi-labs/laravel-reversekit)
 
 ---
 
